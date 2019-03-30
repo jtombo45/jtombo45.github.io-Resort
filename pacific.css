@@ -1,0 +1,336 @@
+
+header, main, nav, footer, figure, figcaption, aside, section, article { display: block; }
+
+/*Styling the body*/
+body{
+	/*Adding 3 font options for browsers*/
+	color: #666666;
+	background-color: #4F6D93;
+	font-family: Arial, Helvetica, sans-serif;
+	/*background-image: linear-gradient(to bottom, #FFFFFF, #4F6D93);*/
+	/*background-image: linear-gradient(to bottom, #ffe6e6, #0033cc);*/
+	background-image: url("background.jpg");
+	/*background-repeat: no-repeat;*/
+	background-size: cover;
+}
+
+/*Stylign the main*/
+main{
+	padding: 1px 20px 20px 30px;
+	display: block;
+	background-color: #FFFFFF;
+	margin-left: 190px;
+}
+/*Styling the nav*/
+nav{
+	float: left;
+	width: 160px;
+	font-weight: bold;
+	padding: 20px;
+	color: ease-out(3);
+}
+/*Styling the nav ul*/
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+	font-size: 1.2em;
+}
+/*Styling the nav a "hyperlink"*/
+nav a{
+	text-decoration: none;
+	/*dimming out the nav color*/
+	transition: color 3s ease-out;
+}
+/*Styling the unvisited "hyperlink"*/
+nav a:link{color: #FFFFFF;}
+/*Styling the visited "hyperlink"*/
+nav a:visited{color: #344873;}
+/*Styling the interactive "hyperlink"*/
+nav a:hover{color: #FFFFFF;}
+
+/*Styling the h1*/
+h1{
+	background-color: #000033;
+	background-image:url(sunset.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	color: #FFFFFF;
+	margin-bottom: 0;
+	height: 60px;
+	text-align: center;
+	padding-top: 15px;
+	text-indent: 1em;
+	margin-top: 0;
+}
+/*Styling the h2*/
+h2{
+	font-family: Georgia, "Times New Roman", sans-serif;
+	color: #3399CC;
+	text-shadow: 1px 1px #CCCCCC;
+}
+/*Stlying the h3*/
+h3{
+	font-family: Georgia, "Times New Roman", sans-serif;
+}
+/*Styling only the main ul*/
+main ul{
+	list-style-image: url('marker.gif'); 
+}
+/*Styling only the ul (unordered list)*/
+ul{
+	padding-left: 0;
+	font-size: 1.2em;
+	list-style-type: none;
+}
+main li{
+	margin-left: 50px;
+}
+
+dt{
+	color: #000033;
+}
+/*Sytling the class name: resort*/
+.resort{
+	color: #5C7FA3;
+	font-weight: bold;
+}
+/*Styling the wrapper id*/
+#wrapper{
+	background-color: #339CAE;
+	width: 80%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	align-content: center;
+	min-width: 960px;
+	max-width: 2048px;
+	box-shadow: 3px 3px #333333; 
+}
+#contact{
+	font-size: 90%;
+}
+#homehero{
+	height: 300px;
+	background-image: url(coasthero.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 190px;
+}
+#yurthero{
+	height: 300px;
+	background-image: url(yurthero.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 190px;
+}
+#trailhero{
+	height: 300px;
+	background-image: url(trailhero.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin-left: 190px;
+}
+
+/*Styling the footer*/
+footer{
+	font-size: 75%;
+	font-style: italic;
+	text-align: center;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	padding: 20px;
+	margin-left: 190px;
+	background-color: #FFFFFF;
+}
+
+table{
+	border: 1px solid #3399CC;
+	width: 80%;
+	border-spacing: 0;
+
+}
+table td{
+	padding: 5px;
+	border: 1px solid #3399CC;
+	text-align: left;
+	
+}
+
+table th{
+		padding: 5px;
+		border: 1px solid #3399CC;
+}
+
+td{
+		text-align: center;
+}
+.text{
+		text-align: left !important;
+}
+table:nth-of-type(odd){
+		background-color: #F5FAFC;
+}
+
+video, embed{ 
+	float: right; padding-left: 20px; 
+}
+
+#gallery{
+	position: relative;
+
+}
+#gallery ul{
+	width: 350px; /*?????????????????????????*/
+	list-style-type: none;
+
+}
+#gallery li{
+	display: inline;
+	float: left;
+	padding: 1px; /*?????????????????????????: orginally 10px*/
+}
+#gallery img{
+	border-style: none;
+}
+#gallery a{
+	text-decoration: none;
+	color: #eaeaea;
+	font-style: italic; 
+	
+}
+#gallery span{
+	position: absolute;
+	left: -1000px;
+	opacity: 0;
+	transition: opacity 3s ease-in-out;
+}
+
+#gallery a:hover span{
+	position: absolute;
+	top: 16px;
+	left: 320px;
+	text-align: center;
+	opacity: 1;
+	/*display: list-item;*/
+}
+figure{
+	position: absolute;
+	left: 330px; /*Left positioning of the figure: originally 280px*/
+	text-align: center;
+	opacity: 0.25;
+}
+
+/*
+#container{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+*/
+/*
+#container img{
+	width: 100px;
+	height: 75px;
+	margin: 10px;	
+}*/
+
+
+footer{
+	margin: auto;
+	float: none;
+}
+
+
+label{
+	float: left;
+	display: block;
+	text-align: right;
+	width: 120px;
+	padding-right: 5px /*.................Edit................................................*/
+}
+
+input, textarea, button{ /*.................Edit................................................*/
+	display: block;
+	margin-bottom: 20px;
+	margin-left: 130px;
+}
+
+input [type="submit"]{
+	margin-left: 130px;
+}
+
+
+
+#mobile{display:none;}
+#desktop{display:inline;}
+
+@media only screen and (max-width: 64em){
+	body{
+		margin: 0;
+		background-color: #FFFFFF;
+	}
+	#wrapper{
+		min-width: 0;
+		width: auto;
+		box-shadow: none;
+	}
+	#homehero, #yurthero, #trailhero{
+		margin-left: 0;
+		height: 200px;
+	}
+	main{
+		margin-left: 0;
+	}
+	nav{
+		color: ease-out(3);
+		float: none;
+		width: auto;
+		padding: 0.5em;
+		text-align: center;
+	}
+	nav li{ 
+		display: inline;
+		padding: 0.25em 0.75em;
+	}
+	footer{margin-left: 0;}
+}
+
+@media only screen and (max-width: 37.5em){
+	header{padding-top: 1em;}
+	main{
+		padding: 0.1em 1em;
+		font-size: 90%;
+	}
+	h1{ font-size: 1.5em;}
+	nav{ padding: 0;}
+	nav li{ 
+		display: block;
+		margin: 0;
+		border-bottom: 2px solid #330000;
+	}
+	nav a{ display: block; }
+
+	#homehero, #yurthero, #trailhero{
+		background-image: none;
+		height: 0;
+	}
+	#mobile{ display: inline; }
+	#desktop{ display: none; }
+	/*Gallery*.........................................................*/
+	#gallery{
+		display: none;
+	}
+	label{
+		float:none;
+		text-align: left;
+	}
+	input [type="submit"]{
+	margin-left: 0;
+}
+
+
+}/*End of media*/
+
+
+}/*End of html file

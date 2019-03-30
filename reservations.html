@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pacific Trails Resort :: Reservations</title>
+		<meta charset="utf-8">
+		<!--Descripton Met Tag-->
+		<meta name="The page displays a form to fill out regarding reservation. 
+		The information needed includes name, arrival date, night staying, phone and email." content="Home Page">
+		<!--Linking to CSS file-->
+		<link rel="stylesheet" type="text/css" href="pacific.css">
+	</head>
+	<body>
+		<div id="wrapper">
+		<h1>Pacific Trails Resort</h1>
+
+		<!-- Creating the nav menu -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="yurts.html">Yurts</a></li>
+				<li><a href="activities.html">Activities</a></li>
+				<li><a href="reservations.html">Reservations</a></li>
+			</ul>
+		</nav>
+		<!-- Main: Describing the Pacific Trails Resort -->
+		<main>
+			<!--Creating the headers-->
+			<h2>Reservations at Pacific Trails</h2>
+			<h3>Contact Us Today!</h3>
+			<!--Creating the form section-->
+			<form action="http://webdevbasics.net/scripts/pacific.php" method="post">
+				
+				<!--First Name-->
+				<label for="myFName">*First Name:</label>
+				<input id="myFName" name="myFName" type="text">
+				<!--Last Name-->
+				<label for="myLName">*Last Name:</label>
+				<input id="myLName" name="myLName" type="text">
+				<!--Email-->
+				<label for="myEmail">*E-mail:</label>
+				<input id="myEmail" name="myEmail" type="email" size="35" maxlength="12">
+				<!--Phone NBR-->
+				<label for="myPhone">Phone:</label>
+				<input id="myPhone" name="myPhone" type="tel">
+				<!--Arrival Date-->
+				<label for="myArrival">Arrival Date:</label>
+				<input id="myArrival" name="myArrival" type="date">
+				<!--Nights-->
+				<label for="myNights">Nights:</label>
+				<input id="myNights" name="myNights" type="number" min="1" max="7">
+				<!--Comment-->
+				<label for="myComment">*Comments:</label>
+				<textarea id="myComment" name="myComment" rows="2" cols="30"></textarea> 
+				<!--Button-->
+				<button type="submit" value="Submit">Submit</button>
+
+			</form>
+
+			<!-- Creating the Address content -->
+			<div id="contact">
+				<span class="resort">Pacific Trails Resort</span><br>
+				12010 Pacific Trails Road<br>
+				Zephyr, CA 95555<br><br>
+				888-555-5555<br>
+			</div>
+		
+
+		<br> <!-- Creating spaces in between the main and footer -->
+
+		<!-- Creating the footer section-->
+		<footer>
+			<small>
+				Copyright @ 2016 Pacific Trails Resort<br>
+				<a href="mailto:judicael@tombo.com"><i>judicael@tombo.com</i></a>
+			</small>
+		</footer><!-- End of footer -->
+		</main> <!-- End of main -->
+
+		</div> <!--End of wrapper-->
+	</body> <!-- End of body -->
+</html> <!-- End of html -->
